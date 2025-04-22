@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Emergency Electricals</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -11,7 +12,7 @@
       margin: 0;
       padding: 0;
       scroll-behavior: smooth;
-      background-color: #000; /* fallback background */
+      background-color: #000;
     }
 
     header {
@@ -95,23 +96,22 @@
     }
 
     .hero-banner {
-  background-image: url('./one.pic/BGImage.jpg'); /* Replace with your image */
-  background-size: cover;
-  background-position: center;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
+      background-image: url('./one.pic/BGImage.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
 
-.hero-text {
-  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
-  padding: 30px;
-  border-radius: 10px;
-}
-
+    .hero-text {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 30px;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
@@ -162,137 +162,196 @@
     </nav>
   </header>
 
+  <!-- Hero Banner -->
   <section class="hero-banner">
     <div class="hero-text">
       <h2>Need Help with Electrical Work?</h2>
       <p>We’re just a call away – 24/7 support across Electronic City!</p>
       <h2>24/7 Electrician Services in Electronic City, Bangalore</h2>
       <p style="margin-top: 20px;">Click below to contact us immediately</p>
-      <button class="action-button" onclick="handleContact()">📞 Call or WhatsApp</button>
+      <button class="action-button" onclick="handleContact()">📞 Call </button>
+      <button class="action-button" onclick="handleWhatsApp()">💬 WhatsApp</button>
     </div>
   </section>
 
-  <!-- ✅ Dark Background Content -->
+  <!-- Content Wrapper -->
   <div class="content-wrapper">
 
-    <!-- Home Section -->
-    <!-- <main id="home">
-      <h2>24/7 Electrician Services in Electronic City, Bangalore</h2>
-      <p style="margin-top: 20px;">Click below to contact us immediately</p>
-      <button class="action-button" onclick="handleContact()">📞 Call or WhatsApp</button>
-    </main> -->
-
     <!-- About Section -->
-    <section id="about">
-      <h2>ABOUT US</h2>
-      <br>
+    <section id="about" class="container">
+      <h2 class="text-center mb-5">ABOUT US</h2>
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="./one.pic/AboutElectrician.png" alt="Electrician at Work" class="img-fluid rounded-3">
+        <div class="col-md-6 mb-4">
+          <img src="./one.pic/AboutElectrician.png" alt="Electrician at Work" class="img-fluid rounded-3 w-100">
         </div>
         <div class="col-md-6">
-          <p style="width: 100%; height: 300px; text-align: justify;">
+          <p class="text-start">
             Emergency Electricals is a trusted name in Electronic City, Bangalore, offering reliable and affordable electrician services. 
-            Owned by Naveen, a certified professional with 10+ years of experience, we specialize in quick response emergency services.
+            Owned by Naveen, a certified professional with 10+ years of experience, we specialize in quick-response emergency services.
             We handle domestic and commercial electrical needs with care and expertise.
             From wiring to appliance installation, we guarantee neat and professional work.
-            Our customers trust us for punctuality and problem-solving ability.
-            We prioritize safety in every job and use only high-quality materials for lasting results.
-            Whether it's a power outage, faulty wiring, or a new appliance setup, we’ve got you covered.
-            Our team is available 24/7 for urgent electrical issues in and around Electronic City.
-            With transparent pricing and no hidden charges, you know exactly what you're paying for.
+            Our team is available 24/7 with transparent pricing and quality materials.
             Choose Emergency Electricals — where professionalism meets peace of mind.
-
-
-            Call us anytime and we’ll be there!
           </p>
         </div>
       </div>
     </section>
 
-    <!-- Services Section -->
- <!-- Services Section -->
+   <!-- Services Section -->
 <section id="services" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5">Our Services</h2>
+      <h2 class="text-center mb-5">OUR SERVICES</h2>
       <div class="row g-4">
-        
-        <!-- TV Installation -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <div class="card-img-wrapper" style="height: 220px; overflow: hidden;">
-              <img src="./one.pic/tv installation.jpg" class="card-img-top" alt="TV Installation">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">TV Installation</h5>
-              <p class="card-text">Wall-mount and setup services for all TV brands and models.</p>
-            </div>
+
+         <!-- Tv Installation -->
+        <div class="col-sm-6 col-lg-4">
+            <a href="tvinstallation.html" class="text-decoration-none text-white">
+              <div class="card h-100">
+                <div class="card-img-wrapper">
+                  <img src="./one.pic/tv.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="TV Installation">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">TV INSTALLATION</h5>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
+          
   
         <!-- Switch Board Repair -->
-        <div class="col-md-4">
+        <div class="col-sm-6 col-lg-4">
+            <a href="switchboard.html" class="text-decoration-none text-white">
           <div class="card h-100">
-            <div class="card-img-wrapper" style="height: 220px; overflow: hidden;">
-              <img src="./one.pic/Switch.jpg" class="card-img-top" alt="Switchboard Repair">
-            </div>
+            <img src="./one.pic/switchboard-1.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="Switchboard Repair">
             <div class="card-body">
-              <h5 class="card-title">Switch Board Repair</h5>
-              <p class="card-text">Quick fixes and replacements for faulty or burnt-out switchboards.</p>
+              <h5 class="card-title">SWITCH BOARD REPAIR</h5>
             </div>
           </div>
+        </a>
         </div>
   
         <!-- Ceiling Fan Installation -->
-        <div class="col-md-4">
+        <div class="col-sm-6 col-lg-4">
+            <a href="ceilingfan.html" class="text-decoration-none text-white">
           <div class="card h-100">
-            <div class="card-img-wrapper" style="height: 220px; overflow: hidden;">
-              <img src="./one.pic/Fan installation.jpg" class="card-img-top" alt="Ceiling Fan Installation">
-            </div>
+            <img src="./one.pic/Fan installation.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="Ceiling Fan">
             <div class="card-body">
-              <h5 class="card-title">Ceiling Fan Installation</h5>
-              <p class="card-text">Professional fitting of ceiling fans with safety and stability.</p>
+              <h5 class="card-title">CEILING FAN INSTALLATION</h5>
             </div>
           </div>
-        </div>
-  
-        <!-- Wiring & Cabling -->
-        <div class="col-md-4">
-          <div class="card h-100">
-            <div class="card-img-wrapper" style="height: 220px; overflow: hidden;">
-              <img src="./one.pic/Wire Installations.webp" class="card-img-top" alt="Wiring Services">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">Wiring & Cabling</h5>
-              <p class="card-text">New wiring, rewiring, and structured cabling for homes and offices.</p>
-            </div>
-          </div>
+        </a>
         </div>
   
         <!-- Inverter Installation -->
-        <div class="col-md-4">
+        <div class="col-sm-6 col-lg-4">
+            <a href="invetor.html" class="text-decoration-none text-white">
           <div class="card h-100">
-            <div class="card-img-wrapper" style="height: 220px; overflow: hidden;">
-              <img src="./one.pic/invetor.webp" class="card-img-top" alt="Inverter Installation">
-            </div>
+            <img src="./one.pic/invetor.webp" class="card-img-top img-fluid" style="height: 235px;" alt="Inverter Installation">
             <div class="card-body">
-              <h5 class="card-title">Inverter Installation</h5>
-              <p class="card-text">Seamless inverter setup for continuous power backup at your place.</p>
+              <h5 class="card-title">INVERTER INSTALLATION</h5>
             </div>
           </div>
+            </a>
         </div>
   
-        <!-- Geyser Installation -->
-        <div class="col-md-4">
+        <!-- Light Installation -->
+        <div class="col-sm-6 col-lg-4">
+            <a href="light.html" class="text-decoration-none text-white">
           <div class="card h-100">
-            <div class="card-img-wrapper" style="height: 220px; overflow: hidden;">
-              <img src="./one.pic/geyser.webp" class="card-img-top" alt="Geyser Installation">
-            </div>
+            <img src="./one.pic/Light.jpeg" class="card-img-top img-fluid" style="height: 235px;" alt=" Light Installation">
             <div class="card-body">
-              <h5 class="card-title">Geyser Installation</h5>
-              <p class="card-text">Safe and secure fitting of water heaters and geysers with plumbing support.</p>
+              <h5 class="card-title">LIGHT INSTALLATION</h5>
             </div>
           </div>
+        </a>
+        </div>
+  
+        <!-- CCTV Installation -->
+        <div class="col-sm-6 col-lg-4">
+            <a href="cctv.html" class="text-decoration-none text-white">
+          <div class="card h-100">
+            <img src="./one.pic/CCtv.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="CCTV Installation">
+            <div class="card-body">
+              <h5 class="card-title">CCTV INSTALLATION</h5>
+            </div>
+          </div>
+        </a>
+        </div>
+  
+        <!-- EVCHARGER Installation -->
+        <div class="col-sm-6 col-lg-4 ">
+            <a href="evcharger.html" class="text-decoration-none text-white">
+          <div class="card h-100">
+            <img src="./one.pic/EV charger.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="Door Bell Installation">
+            <div class="card-body">
+              <h5 class="card-title">EV CHARGER INSTALLATION</h5>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <!-- Main MCB Installation -->
+        <div class="col-sm-6 col-lg-4">
+            <a href="mcb.html" class="text-decoration-none text-white">
+          <div class="card h-100">
+            <img src="./one.pic/MCB (2).jpg" class="card-img-top img-fluid" style="height: 235px;" alt="Main MCB Installation">
+            <div class="card-body">
+              <h5 class="card-title">MAIN MCB INSTALLATION</h5>
+            </div>
+          </div>
+            </a>
+        </div>
+
+         <!-- POP Wiring -->
+         <div class="col-sm-6 col-lg-4">
+            <a href="POPWiring.html" class="text-decoration-none text-white">
+              <div class="card h-100">
+                <div class="card-img-wrapper">
+                  <img src="./one.pic/pop (2).jpg" class="card-img-top img-fluid" style="height: 235px;" alt="TV Installation">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">POP WIRING</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Interior Wiring -->
+         <div class="col-sm-6 col-lg-4">
+            <a href="interior.html" class="text-decoration-none text-white">
+              <div class="card h-100">
+                <div class="card-img-wrapper">
+                  <img src="./one.pic/INTER.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="Interior Work">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">INTERIOR WORK</h5>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+        <!-- Wiring & Rewiring -->
+        <div class="col-sm-6 col-lg-4">
+            <a href="wiring.html" class="text-decoration-none text-white">
+          <div class="card h-100">
+            <img src="./one.pic/Wire Installations.webp" class="card-img-top img-fluid" style="height: 235px;" alt="Wiring Services">
+            <div class="card-body">
+              <h5 class="card-title">WIRING & REPAIRING</h5>
+            </div>
+          </div>
+        </a>
+        </div>
+        
+    <!-- Earthing Repair -->
+        <div class="col-sm-6 col-lg-4">
+            <a href="earthing.html" class="text-decoration-none text-white">
+          <div class="card h-100">
+            <img src="./one.pic/Earthing.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="Earthing Repair">
+            <div class="card-body">
+              <h5 class="card-title">EARTHING REPAIR</h5>
+            </div>
+          </div>
+        </a>
         </div>
   
       </div>
@@ -301,9 +360,9 @@
   
 
     <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <div class="map-container">
+    <section id="contact" class="container py-5">
+      <h2 class="text-center mb-4">CONTACT US</h2>
+      <div class="mb-4">
         <iframe 
           src="https://maps.google.com/maps?q=MM%20English%20High%20School%2C%20Doddatoguru%2C%20Electronic%20City%2C%20Bangalore&t=&z=15&ie=UTF8&iwloc=&output=embed" 
           width="100%" 
@@ -329,19 +388,29 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-  <!-- Call/WhatsApp script -->
+  <!-- Contact Button Script -->
   <script>
-    function isMobile() {
-      return /Mobi|Android|iPhone/i.test(navigator.userAgent);
-    }
+   function isMobile() {
+  return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+}
 
-    function handleContact() {
-      if (isMobile()) {
-        window.location.href = "tel:+916302688718";
-      } else {
-        window.open("https://wa.me/916302688718", "_blank");
-      }
-    }
+function handleCall() {
+  if (isMobile()) {
+    window.location.href = "tel:+916302688718";  // Change this number if needed
+  } else {
+    window.open("https://wa.me/916302688718", "_blank"); // WhatsApp link for desktops
+  }
+}
+
+function handleWhatsApp() {
+  if (isMobile()) {
+    window.location.href = "https://wa.me/916302688718"; // WhatsApp link for mobile users
+  } else {
+    window.open("https://wa.me/916302688718", "_blank"); // WhatsApp link for desktops
+  }
+}
+
   </script>
+
 </body>
 </html>
