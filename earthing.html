@@ -39,8 +39,39 @@
   <li>Voltage stabilization and equipment safety</li>
   <li>Compliance with safety and electrical standards</li>
 </ul>
+
+ <!-- Contact Buttons -->
+ <div class="mt-4">
+    <p style="margin-top: 20px;">Need help? Contact us now!</p>
+    <button class="btn btn-success me-2" onclick="handleCall()">📞 Call</button>
+    <button class="btn btn-outline-success" onclick="handleWhatsApp()">💬 WhatsApp</button>
+  </div>
+
     <a href="index.html" class="btn btn-primary mt-3">⬅ Back to Home</a>
   </div>
 
+  <script>
+    function isMobile() {
+      return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+    }
+  
+    function handleCall() {
+      if (isMobile()) {
+        window.location.href = "tel:+916302688718";
+      } else {
+        alert("Please call us from your mobile device or use WhatsApp.");
+        window.open("https://wa.me/916302688718", "_blank");
+      }
+    }
+  
+    function handleWhatsApp() {
+      if (isMobile()) {
+        window.location.href = "https://wa.me/916302688718";
+      } else {
+        window.open("https://wa.me/916302688718", "_blank");
+      }
+    }
+  </script>
+  
 </body>
 </html>

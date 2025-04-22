@@ -169,7 +169,7 @@
       <p>We’re just a call away – 24/7 support across Electronic City!</p>
       <h2>24/7 Electrician Services in Electronic City, Bangalore</h2>
       <p style="margin-top: 20px;">Click below to contact us immediately</p>
-      <button class="action-button" onclick="handleContact()">📞 Call </button>
+      <button class="action-button" onclick="handleCall()">📞 Call</button>
       <button class="action-button" onclick="handleWhatsApp()">💬 WhatsApp</button>
     </div>
   </section>
@@ -394,21 +394,26 @@
   return /Mobi|Android|iPhone/i.test(navigator.userAgent);
 }
 
+
 function handleCall() {
+  console.log("handleCall clicked");
   if (isMobile()) {
-    window.location.href = "tel:+916302688718";  // Change this number if needed
+    window.location.href = "tel:+916302688718";
   } else {
-    window.open("https://wa.me/916302688718", "_blank"); // WhatsApp link for desktops
+    alert("Please call us from your mobile device or use WhatsApp.");
+    window.open("https://wa.me/916302688718", "_blank");
   }
 }
 
 function handleWhatsApp() {
+  console.log("handleWhatsApp clicked");
   if (isMobile()) {
-    window.location.href = "https://wa.me/916302688718"; // WhatsApp link for mobile users
+    window.location.href = "https://wa.me/916302688718";
   } else {
-    window.open("https://wa.me/916302688718", "_blank"); // WhatsApp link for desktops
+    window.open("https://wa.me/916302688718", "_blank");
   }
 }
+
 
   </script>
 

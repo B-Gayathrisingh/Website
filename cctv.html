@@ -43,5 +43,28 @@
     <a href="index.html" class="btn btn-primary mt-3">⬅ Back to Home</a>
   </div>
 
+  <script>
+    function isMobile() {
+      return /Mobi|Android|iPhone/i.test(navigator.userAgent);
+    }
+  
+    function handleCall() {
+      if (isMobile()) {
+        window.location.href = "tel:+916302688718";
+      } else {
+        alert("Please call us from your mobile device or use WhatsApp.");
+        window.open("https://wa.me/916302688718", "_blank");
+      }
+    }
+  
+    function handleWhatsApp() {
+      if (isMobile()) {
+        window.location.href = "https://wa.me/916302688718";
+      } else {
+        window.open("https://wa.me/916302688718", "_blank");
+      }
+    }
+  </script>
+  
 </body>
 </html>
