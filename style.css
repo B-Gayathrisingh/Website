@@ -1,10 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f9f9;
-    color: #333;
-  }
+
+    body {
+        background-image: url('./one.pic/BGImage.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff; /* Ensures text remains visible on a dark background */
+        font-family: Arial, sans-serif;
+      }
+      
+  
   
   header {
     background-color: #222;
@@ -12,6 +17,13 @@ body {
     padding: 1em;
     text-align: center;
   }
+  .container,
+.content {
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly transparent dark overlay for readability */
+  border-radius: 12px;
+  padding: 20px;
+}
+
   
   nav a {
     margin: 0 15px;

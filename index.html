@@ -14,6 +14,16 @@
       scroll-behavior: smooth;
       background-color: #000;
     }
+    body {
+  background-image: url('./one.pic/BGImage.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff; /* Ensures text remains visible on a dark background */
+  font-family: Arial, sans-serif;
+}
+
 
     header {
       background-color: #222;
@@ -27,7 +37,7 @@
       color: white;
       text-decoration: none;
       font-weight: bold;
-    }
+    } 
 
     nav a:hover {
       text-decoration: underline;
@@ -96,22 +106,46 @@
     }
 
     .hero-banner {
-      background-image: url('./one.pic/BGImage.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 350px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
+  position: relative;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./one.pic/BGImage.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
+.hero-banner h2,
+.hero-banner p,
+.hero-banner .action-button {
+  position: relative;
+  z-index: 2;
+  color:black;
+}
+
 
     .hero-text {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color:black(0, 0, 0, 0.5);
       padding: 30px;
       border-radius: 10px;
     }
+
+    
   </style>
 </head>
 <body>
@@ -123,7 +157,7 @@
         <img src="./one.pic/IMG-20250402-WA0007.jpg" class="d-block w-100" alt="Electrician Service 1">
         <div class="carousel-caption d-none d-md-block">
           <h5>Emergency Electricals</h5>
-          <p>Your trusted 24/7 electrician service in Electronic City, Bangalore.</p>
+          <p>Your trusted 24/7 electrician service in Bangalore.</p>
         </div>
       </div>
       <div class="carousel-item">
@@ -137,7 +171,7 @@
         <img src="./one.pic/IMG-20250402-WA0008.jpg" class="d-block w-100" alt="Electrician Service 3">
         <div class="carousel-caption d-none d-md-block">
           <h5>Available 24/7</h5>
-          <p>We are available anytime, anywhere in Electronic City.</p>
+          <p>We are available anytime, anywhere in Bangalore.</p>
         </div>
       </div>
     </div>
@@ -151,23 +185,27 @@
     </button>
   </div>
 
+  
   <!-- Header & Navigation -->
-  <header>
-    <h1>Emergency Electricals</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<header class="text-white text-center py-5" style="background-image: url('./one.pic/bg.jpg'); background-size: cover; background-position: center; position: relative;">
+   
+      <h1 class="mb-3">Emergency Electricals</h1>
+      <nav class="d-flex justify-content-center gap-4 flex-wrap">
+        <a href="#home" class="text-white text-decoration-none">Home</a>
+        <a href="#about" class="text-white text-decoration-none">About</a>
+        <a href="#services" class="text-white text-decoration-none">Services</a>
+        <a href="#contact" class="text-white text-decoration-none">Contact</a>
+      </nav>
+    </div>
   </header>
+  
 
   <!-- Hero Banner -->
   <section class="hero-banner">
-    <div class="hero-text">
+    <div>
       <h2>Need Help with Electrical Work?</h2>
-      <p>We’re just a call away – 24/7 support across Electronic City!</p>
-      <h2>24/7 Electrician Services in Electronic City, Bangalore</h2>
+      <p>We’re just a call away – 24/7 support across Bangalore!</p>
+      <h2>24/7 Electrician Services around  Electronic City, Bangalore</h2>
       <p style="margin-top: 20px;">Click below to contact us immediately</p>
       <button class="action-button" onclick="handleCall()">📞 Call</button>
       <button class="action-button" onclick="handleWhatsApp()">💬 WhatsApp</button>
@@ -307,7 +345,7 @@
             <a href="POPWiring.html" class="text-decoration-none text-white">
               <div class="card h-100">
                 <div class="card-img-wrapper">
-                  <img src="./one.pic/pop (2).jpg" class="card-img-top img-fluid" style="height: 235px;" alt="TV Installation">
+                  <img src="./one.pic/POPW.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="TV Installation">
                 </div>
                 <div class="card-body">
                   <h5 class="card-title">POP WIRING</h5>
@@ -353,6 +391,42 @@
           </div>
         </a>
         </div>
+
+     <!--Geyser installation & Repair -->
+     <div class="col-sm-6 col-lg-4">
+        <a href="geyser.html" class="text-decoration-none text-white">
+      <div class="card h-100">
+        <img src="./one.pic/geyserr.avif" class="card-img-top img-fluid" style="height: 235px;" alt="Wiring Services">
+        <div class="card-body">
+          <h5 class="card-title">Geyser Installation & Repair</h5>
+        </div>
+      </div>
+    </a>
+    </div>   
+    
+     <!--AC installation & Repair -->
+     <div class="col-sm-6 col-lg-4">
+        <a href="ac.html" class="text-decoration-none text-white">
+      <div class="card h-100">
+        <img src="./one.pic/AC installation.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="Wiring Services">
+        <div class="card-body">
+          <h5 class="card-title">AC Installation & Wiring</h5>
+        </div>
+      </div>
+    </a>
+    </div>  
+
+    <!--Power Failure -->
+    <div class="col-sm-6 col-lg-4">
+        <a href="powerfailure.html" class="text-decoration-none text-white">
+      <div class="card h-100">
+        <img src="./one.pic/PowerFailure.jpg" class="card-img-top img-fluid" style="height: 235px;" alt="Wiring Services">
+        <div class="card-body">
+          <h5 class="card-title">Power Failure</h5>
+        </div>
+      </div>
+    </a>
+    </div>   
   
       </div>
     </div>
